@@ -9,7 +9,12 @@
     "experimentalDecorators": true,
     "target": "es5",
     "typeRoots": [
-      "node_modules/@types"
+      "../node_modules/@types"
+    ],
+    "types": [
+      "jasmine",
+      "node",
+      "selenium-webdriver"
     ],
     "lib": [
       "es2017",
@@ -17,9 +22,6 @@
     ],
     "plugins": [
       { "name": "tslint-language-service"}
-    ],
-    "angularCompilerOptions": {
-      "enableIvy": true
-    } 
+    ]
   }
 }
