@@ -1,32 +1,57 @@
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-// import { LoginComponent } from './common/login.component';
-import { MainComponent } from './common/main.component';
+import {
+  NbAuthComponent,
+  NbLoginComponent,
+  NbLogoutComponent,
+  NbRegisterComponent,
+  NbRequestPasswordComponent,
+  NbResetPasswordComponent,
+} from '@nebular/auth';
 
 const routes: Routes = [
-  { 
-    path : '',
-    redirectTo: '/login',
-    pathMatch: 'full'
-  },
-  // {
-  //   path: 'login',
-  //   component: LoginComponent,
-  //   data: {title: '로그인'}
-  // },
+  { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
   {
-    path : 'main',
-    component : MainComponent,
-    data: {title: '메인'}
-  }
+    path: 'auth',
+    component: NbAuthComponent,
+    children: [
+      {
+        path: '',
+        component: NbLoginComponent,
+      },
+      {
+        path: 'login',
+        component: NbLoginComponent,
+      },
+      {
+        path: 'register',
+        component: NbRegisterComponent,
+      },
+      {
+        path: 'logout',
+        component: NbLogoutComponent,
+      },
+      {
+        path: 'request-password',
+        component: NbRequestPasswordComponent,
+      },
+      {
+        path: 'reset-password',
+        component: NbResetPasswordComponent,
+      },
+    ],
+  },
+  { path: '', redirectTo: 'pages', pathMatch: 'full' },
+  { path: '**', redirectTo: 'pages' },
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
+const config: ExtraOptions = {
+  useHash: true,
+};
 
-export class AppRoutingModule { }
-export const routingComponent = [
-  //LoginComponent, 
-  MainComponent]
+@NgModule({
+  imports: [RouterModule.forRoot(routes, config)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {
+}
