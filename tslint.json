@@ -7,7 +7,11 @@
       true,
       {
         "multiline": "always",
-        "singleline": "never"
+        "singleline": "never",
+        "objects": "always",
+        "arrays": "always",
+        "functions": "never",
+        "typeLiterals": "ignore"
       }
     ],
     "arrow-return-shorthand": true,
