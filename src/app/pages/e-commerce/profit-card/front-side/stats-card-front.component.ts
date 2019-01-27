@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProfitBarAnimationChartService } from '../../../../@core/data/profit-bar-animation-chart.service';
+import { ProfitBarAnimationChartService } from '../../../../core/data/profit-bar-animation-chart.service';
 import { takeWhile } from 'rxjs/operators';
 
 @Component({

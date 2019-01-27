@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { EarningService, PieChart } from '../../../../@core/data/earning.service';
+import { EarningService, PieChart } from '../../../../core/data/earning.service';
 import { takeWhile } from 'rxjs/operators';
 
 @Component({

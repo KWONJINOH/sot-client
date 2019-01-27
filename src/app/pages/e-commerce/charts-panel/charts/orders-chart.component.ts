@@ -2,8 +2,8 @@ import { AfterViewInit, Component, Input, OnChanges, OnDestroy } from '@angular/
 import { NbThemeService } from '@nebular/theme';
 import { delay, takeWhile } from 'rxjs/operators';
 
-import { OrdersChart } from '../../../../@core/data/orders-chart.service';
-import { LayoutService } from '../../../../@core/data/layout.service';
+import { OrdersChart } from '../../../../core/data/orders-chart.service';
+import { LayoutService } from '../../../../core/data/layout.service';
 
 @Component({
   selector: 'ngx-orders-chart',

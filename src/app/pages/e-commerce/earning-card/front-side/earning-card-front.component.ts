@@ -2,7 +2,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { interval , Subscription } from 'rxjs';
 import { switchMap, takeWhile } from 'rxjs/operators';
-import { EarningService, LiveUpdateChart } from '../../../../@core/data/earning.service';
+import { EarningService, LiveUpdateChart } from '../../../../core/data/earning.service';
 
 @Component({
   selector: 'ngx-earning-card-front',

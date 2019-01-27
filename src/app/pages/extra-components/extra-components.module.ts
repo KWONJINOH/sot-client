@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { TreeModule } from 'angular-tree-component';
 import { ToasterModule } from 'angular2-toaster';
 
-import { ThemeModule } from '../../@theme/theme.module';
+import { ThemeModule } from '../../theme/theme.module';
 import { ExtraComponentsRoutingModule } from './extra-components-routing.module';
 
 // components

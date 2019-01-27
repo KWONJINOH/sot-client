@@ -1,7 +1,7 @@
 import { Component, OnDestroy } from '@angular/core';
-import { TrafficList, TrafficListService } from '../../../@core/data/traffic-list.service';
+import { TrafficList, TrafficListService } from '../../../core/data/traffic-list.service';
 import { takeWhile } from 'rxjs/operators';
-import { TrafficBar, TrafficBarService } from '../../../@core/data/traffic-bar.service';
+import { TrafficBar, TrafficBarService } from '../../../core/data/traffic-bar.service';
 
 @Component({
   selector: 'ngx-traffic-reveal-card',
