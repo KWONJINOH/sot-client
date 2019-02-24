@@ -3,7 +3,7 @@
 ## TODO 목록
 
 1. loginComponent page folder 안에서 커스텀하기
-
+    1-1. rest, reactive로 rx.js 활용하여 통신하기
 2. member 테이블 계정 하나 생성 후 테스트
 
 3. page 생성 후에 서버에 요청

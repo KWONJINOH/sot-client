@@ -12,7 +12,7 @@ import {
 const routes: Routes = [
   // { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
   {
-    path: '',
+    path: 'login',
     component: NbLoginComponent
   },
   {
@@ -45,8 +45,8 @@ const routes: Routes = [
       },
     ],
   },
-  { path: '', redirectTo: 'pages', pathMatch: 'full' },
-  { path: '**', redirectTo: 'pages' },
+  // { path: '', redirectTo: 'login', pathMatch: 'full' },
+  // { path: '**', redirectTo: 'login' },
 ];
 
 const config: ExtraOptions = {
